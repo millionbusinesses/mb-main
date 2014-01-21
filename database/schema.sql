@@ -54,6 +54,7 @@ CREATE TABLE trackemail (id        INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
                        couponcode       VARCHAR(200),
                        time      VARCHAR(80)); 
                        
+--                        
                        
 CREATE TABLE unsubscribed_mailinglist (id     INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
                                        email  VARCHAR(80));

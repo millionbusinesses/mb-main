@@ -1,0 +1,106 @@
+
+<div class="col-lg-6">
+	<legend>
+		<i style="display: inline-block; margin-right: 10px; align: center;"
+			class="glyphicon glyphicon-phone"></i>
+		<h4
+			style="font-size: 1.2em; display: inline-block; font-family: 'Alegreya Sans SC', sans-serif;; font-weight: 800;">Add/Edit Products</h4>
+	</legend>
+</div>
+<div class="col-lg-8">
+	<div>
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="productTitle">Product Title</label>
+				<div class="col-sm-4">
+					<input style="font-size: 1.0em; font-family: 'Raleway', sans-serif;" 
+						class="input-lg form-control" type="text" id="productTitle"
+						placeholder="eg. Nexus 7 tablet">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="productBrand">Brand</label>
+				<div class="col-sm-4">
+					<input
+						style="font-size: 1.0em; font-family: 'Raleway', sans-serif;"
+						class="input-lg form-control" type="text" id="productBrand"
+						placeholder="eg. Samsung, Zara">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="productDescription">Description</label>
+				<div class="col-sm-9">
+					<input style="font-size: 1em; font-family: 'Raleway', sans-serif;"
+						class="input-lg form-control" type="text" id="productDescription"
+						placeholder="Describe the product in brief">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="productPrice">Price</label>
+				<div class="col-sm-2">
+					<input
+						style="font-size: 1.3em; font-family: 'Raleway', sans-serif;"
+						class="input-lg form-control" type="text" id="productPrice"
+						placeholder="">
+				</div>
+				<span style="font-size: 1.9em;">&#x20B9;</span>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="discountedPrice">Discounted
+					Price</label>
+				<div class="col-sm-2">
+					<input
+						style="font-size: 1.3em; font-family: 'Raleway', sans-serif;"
+						class="input-lg form-control" type="text" id="discountedPrice"
+						placeholder="">
+				</div>
+				<span style="font-size: 1.9em;">&#x20B9;&nbsp;&nbsp;</span> <span
+					style="font-size: 1.0em; color: #949491">will be shown as </span> <span
+					style="font-size: 1.3em; color: red; font-weight: bold;">&#x20B9;
+					499</span> <span style="text-decoration: line-through; font-size: 1.3em;">&#x20B9;
+					625</span>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="productQuantity">Quantity
+					in your inventory</label>
+				<div class="col-sm-2">
+					<input
+						style="font-size: 1.3em; font-family: 'Raleway', sans-serif;"
+						class="input-lg form-control" type="text" id="productQuantity"
+						placeholder="">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="inputFile">Product
+					Image</label>
+				<div class="col-sm-2">
+					<input type="file" id="inputFile">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-sm-2">
+					<button type="submit" class="btn-form btn btn-default "
+						ng-click="isCollapsed = !isCollapsed ">SAVE Product</button>
+				</div>
+
+				<div class="col-xs-2">
+					<button type="submit" class="btn-form btn btn-default "
+						ng-click="isCollapsed = !isCollapsed ">SAVE and ADD
+						Another</button>
+				</div>
+			</div>
+
+			<div collapse="isCollapsed">
+				<div class="well">Coupon details</div>
+			</div>
+		</form>
+	</div>
+</div>
