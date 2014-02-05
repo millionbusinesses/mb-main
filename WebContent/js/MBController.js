@@ -67,8 +67,9 @@ function editProductsController($scope) {
 										"and colleagues who might be interested.";
 	blueTemplate.line4 = " Each of them gets FLAT 30% OFF";
 
-};
+}
 
 function productsController($scope){
 	
 }
+

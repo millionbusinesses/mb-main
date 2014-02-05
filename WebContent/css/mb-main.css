@@ -8,8 +8,18 @@ height: 400px;
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #fa8600;
+  font-weight: bold;
+  background-color: #32C3E7;
   border-color: #e07b04;
+}
+
+.btn{
+	border: 0px;
+}
+
+body{	
+	-webkit-font-smoothing: antialiased;
+	background-image:url('../img/sos.png');	
 }
 
 .btn-primary:hover,
@@ -18,7 +28,7 @@ height: 400px;
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #d76d00;
+  background-color: #4BD0F1;
   border-color: #4dbdef;
 }
 .btn-default {
@@ -207,10 +217,6 @@ height: 400px;
 	font-size:17px;
 }
 .thumbnail {
-	#background-color: #f8f8f8;
-    #border: 1px;    
-	#width: 250px;
-	#height: 300px;
 }
 
 .small-img-container img{
@@ -225,6 +231,162 @@ height: 400px;
 }
 
 .small-img-container{
-	width: 250px;
-	height: 250px;
+	width: 300px;
+	height: 300px;
+}
+
+.medium-img-container{
+	width: 400px;
+	height: 400px;
+	margin: 2px;
+	padding: 5px;
+}
+
+.medium-img-container img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.tiny-img-container{
+	width: 100px;
+	height: 100px;
+}
+
+.tiny-img-container img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #BBBBBB;
+}
+
+.nav-header{
+	font-family: 'Open Sans', sans-serif;
+	#font-family: "Montserrat";
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #444444;
+	display: block;
+	letter-spacing: 1px;
+	text-rendering: optimizeLegibility;
+	font-size: 17px;
+	
+	line-height: 32px;
+	margin: 0 0 1em 0;
+	padding: 0;
+	border-bottom: 1px solid #C9C1C1;
+	border-top: 1px solid #C9C1C1;
+	padding: 7px 0;
+}
+
+/*{width:200px;background-color:#F8F8F8;font-family: 'Karla', sans-serif;font-weight: 700;;font-size:17px;color:black;}*/
+.nav-pills a a:hover, .nav-pills a a:focus {
+	color:#ffffff;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #688BAA;
+  background-color: transparent;
+}
+
+.nav-pills a {
+	color: #688BAA;
+	margin: 20px;
+	font-size: 18px;
+	display: block;
+	line-height: 1em;
+    height: inherit;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    
+    color: #618D9C;
+	font-family: "Montserrat";
+	#font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+	position: relative;
+	display: block;
+	letter-spacing: 0px;
+	padding-bottom: 8px;
+}
+
+.body-container {
+	background-image:url('../img/sos.png');
+	background-repeat:repeat;
+}
+
+.navbar-inverse {
+	background-color: #ffffff;
+	border-color: #F8F7F7;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #618D9C;
+	font-family: "Montserrat";
+	#font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+	position: relative;
+	display: block;
+	letter-spacing: 0px;
+	padding-bottom: 8px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus{
+	color: #00beff;
+}
+
+.tiny_product_image_container{
+	
+}
+
+.general_text{
+	color: #444444;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	
+	margin: 0 0 1em 0;
+	padding: 0;
+	padding: 7px 0;
+}
+
+.h1, h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.product-header{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #444444;
+	display: block;
+	letter-spacing: 1px;
+	text-rendering: optimizeLegibility;
+	font-size: 17px;
+	
+	line-height: 32px;
+	margin: 0 0 1em 0;
+	padding: 0;
+	padding: 7px 0;
+}
+
+.product-pricing{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #444444;
+	letter-spacing: 1px;
+	text-rendering: optimizeLegibility;
+	font-size: 35px;
+	
+	margin: 0 0 1em 0;
+	padding: 0;
+	padding: 7px 0;
+}
+
+.navbar-collapse{
+	max-height:50px;
 }

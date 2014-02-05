@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="storeSection">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+	<link href='http://fonts.googleapis.com/css?family=Salsa' rel='stylesheet' type='text/css'>  
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>  
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	
+    <title>My Store</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../js/holder.js" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="../css/mb-main.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+	<script src="../js/jquery-1.6.js" type="text/javascript"></script>
+	<script src="../js/jquery.jqzoom-core.js" type="text/javascript"></script>
+    <script src="../3rdparty/angular.1.0.7min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-resource.min.js"></script>
+	<script src="../3rdparty/ui-bootstrap-tpls-0.5.0.min.js"></script>
+    <script src="../js/StoreController.js"></script>
+    
+    <link rel="stylesheet" href="../css/jquery.jqzoom.css" type="text/css">
+    
+    <script type="text/javascript">
+
+$(document).ready(function() {
+	$('.jqzoom').jqzoom({
+            zoomType: 'standard',
+            lens:true,
+            preloadImages: false,
+            alwaysOn:false
+        });
+	
+});
+
+
+</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <br>
+          <a class="brand " href="#">
+            <img src="../img/awesomedresses.png" alt="Awesome Dresses">
+            <!-- span style="font-size: 1.7em;font-family: 'Salsa', cursive;; font-weight: 400;color:white;">Awesome Dresses</span>  -->
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-links nav navbar-nav navbar-right">
+              <li>
+                 <a href="#">Login/Signup</a>
+               </li>
+               <li>
+                 <a href="#">Contact | 988 670 7787</a>
+               </li>
+               <li>
+                  <a href="#">Cart</a>
+               </li>
+            </ul>
+
+          <!--form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form> -->
+        </div><!--/.navbar-collapse -->
+       </div>
+      </div>
+    </div><br><br><br>
+
+     <div class="body-container container" ng-controller="StoreController">
+          <br>  
+             <div class="row"> 
+                 <div class="col-md-3"> 
+                     <ul style="" class="nav nav-pills nav-stacked">  
+                         <br>
+                        <li class="nav-header">&nbsp;&nbsp;Collections</li>  
+                          <li style="font-weight: 400;" ng-repeat="leftStoreNav in leftStoreNavs" class="{{leftStoreNav.class}}" ng-click="leftStoreNavClicked($event, $index)">
+							<a href="{{leftStoreNav.link}}" ng-bind-html-unsafe="leftStoreNav.title"></a></li>
+								             	
+                  	  </ul>
+                 	</div>
+                 	
+                 	<!--BEGIN: Main area for Store and product desc. -->      	
+                    <div>
+						<!-- MAIN PRODUCT  -->
+						<div class="col-md-3" style="width:400px;">
+							<div class="container">
+						   		<div class="row">
+									<div class="col-md-8 medium-img-container">
+										<img src="../img/Being-Human-Men-Jackets_12698413556fdefb56c3a2a7cb5b1dbf_images_1080_1440_mini.jpg">
+									</div>
+								</div>
+								<div class="row">	
+									 <div class="col-md-2 tiny-img-container">
+									    <img src="../img/Being-Human-Men-Jackets_12698413556fdefb56c3a2a7cb5b1dbf_images_1080_1440_mini.jpg">
+									</div>
+						  		</div>
+						  	</div>
+						</div>
+						<div class="col-md-3" style="width:400px;">
+							<div class="container">
+							   <div class="product-header">Blue Winter Jacket for Men</div>
+							   <legend></legend>
+								<div class="product-pricing"> &#x20B9;1300</div>
+								<div class="general_text"> This is excellent material for wind-cheater. Good<br> for both bike use and general</div>
+								<div class="product-header">Description</div>
+								<div class="general_text">This is a stylist jacket. You can wear this in the winters<br>
+								Or when riding a bike. Use this blue jacket for any occasion</div>
+								<a href="#" class="btn btn-primary" role="button">ADD TO CART &raquo;</a> 
+							</div>
+						</div>
+					</div>
+                    <!-- END: Main area for Store and product desc. -->                              	                  	     	                 
+               </div>               
+     </div> 
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

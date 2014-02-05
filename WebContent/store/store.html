@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="storeSection">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,10 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
     <link href='http://fonts.googleapis.com/css?family=Average+Sans|Cantata+One|Signika+Negative:300,400,600,700|Buenard:400,700|Crete+Round|Days+One|Roboto:400,500,900|Balthazar|Radley|Andada' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>	    
+	<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>	
+	<link href='http://fonts.googleapis.com/css?family=Salsa' rel='stylesheet' type='text/css'>  
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>  
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,600,700' rel='stylesheet' type='text/css'>
     <title>My Store</title>
 
     <!-- Bootstrap core CSS -->
@@ -35,7 +38,7 @@
     <script src="../3rdparty/angular.1.0.7min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-resource.min.js"></script>
 	<script src="../3rdparty/ui-bootstrap-tpls-0.5.0.min.js"></script>
-    <script src="../js/MBController.js"></script>
+    <script src="../js/StoreController.js"></script>
   </head>
 
   <body>
@@ -52,16 +55,20 @@
           </button>
           <br>
           <a class="brand " href="#">
-            <img src="../img/branding.png" alt="MillionBusiness">
+            <img src="../img/awesomedresses.png" alt="Awesome Dresses">
+            <!-- span style="font-size: 1.7em;font-family: 'Salsa', cursive;; font-weight: 400;color:white;">Awesome Dresses</span>  -->
           </a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="navbar-links nav navbar-nav navbar-right">
               <li>
-                 <a href="#" style="color:white">Login / Signup</a>
+                 <a href="#">Login/Signup</a>
                </li>
                <li>
                  <a href="#">Contact | 988 670 7787</a>
+               </li>
+               <li>
+                  <a href="#">Cart</a>
                </li>
             </ul>
 
@@ -79,13 +86,13 @@
       </div>
     </div><br><br><br>
 
-     <div class="container" ng-controller="MBHomeController">
+     <div class="body-container container" ng-controller="StoreController">
           <br>  
              <div class="row"> 
                  <div class="col-md-3"> 
-                     <ul style="width:200px;background-color:#F8F8F8;font-family: 'Karla', sans-serif;font-weight: 700;;font-size:17px;color:black;" class="nav nav-pills nav-stacked">  
+                     <ul style="" class="nav nav-pills nav-stacked">  
                          <br>
-                        <li class="nav-header">&nbsp;&nbsp;YOUR STORE</li>  
+                        <li class="nav-header">&nbsp;&nbsp;Collections</li>  
                           <li style="font-weight: 400;" ng-repeat="leftStoreNav in leftStoreNavs" class="{{leftStoreNav.class}}" ng-click="leftStoreNavClicked($event, $index)">
 							<a href="{{leftStoreNav.link}}" ng-bind-html-unsafe="leftStoreNav.title"></a></li>
 								             	
@@ -96,8 +103,7 @@
                     <div>
                        <div class="col-lg-6">
 	                      <legend>
-							 <i style="display: inline-block; margin-right: 10px; align: center;" class="glyphicon glyphicon-shopping-cart"></i>
-		                     <h4 style="font-size: 1.2em; display: inline-block; font-family: 'Alegreya Sans SC', sans-serif;; font-weight: 800;">Manas's Store</h4>
+		                     <h4>Kurtas</h4>
 						  </legend>
 					    </div><br><br>
 
@@ -108,10 +114,10 @@
 						   <div class="col-xs-3">
 							<div class="thumbnail">
 							<div class="small-img-container">
-								<img src="../img/camera.jpeg">
+								<img src="../img/Being-Human-Men-Jackets_12698413556fdefb56c3a2a7cb5b1dbf_images_1080_1440_mini.jpg">
 								</div>
 								<div class="caption">
-									<p>This camera clicks the photographs well.</p>
+									<p>Men's Shirt.</p>
 									<legend></legend>
 									<p>
 									    <span style="font-size: 1.2em; color: green; font-weight: bold;">&#x20B9;4999</span> 
@@ -123,10 +129,10 @@
 							<div class="col-xs-3">
 							<div class="thumbnail">
 							<div class="small-img-container">
-								<img src="../img/handycam.jpeg">
+								<img src="../img/Being-Human-Men-Black-&-Grey-Melange-Reversible-Jacket_c270c7fb9cd83b39bad9deb3b007c057_images_360_480_mini.jpg">
 								</div>
 								<div class="caption">
-									<p>This camera clicks the photographs well.</p>
+									<p>This is also men's shirt.</p>
 									<legend></legend>
 									<p>
 									    <span style="font-size: 1.2em;color: green; font-weight: bold;">&#x20B9;6499</span> 
