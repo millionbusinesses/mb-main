@@ -1,5 +1,5 @@
 <%@ page trimDirectiveWhitespaces="true" %>
-<%@ page import="com.referspark.util.ClientUtil" %>
+<%@ page import="in.accountantconnect.util.ClientUtil" %>
 <%
 String couponCode = request.getParameter("couponcode");
 String ipAddress = request.getRemoteHost();

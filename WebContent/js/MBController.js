@@ -67,9 +67,17 @@ function editProductsController($scope) {
 										"and colleagues who might be interested.";
 	blueTemplate.line4 = " Each of them gets FLAT 30% OFF";
 
+<<<<<<< HEAD
 }
 
 function productsController($scope){
 	
 }
 
+=======
+};
+
+function productsController($scope){
+	
+}
+>>>>>>> abf2bed704b503288b562f72cd094d8d798ecffc
